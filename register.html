@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng ký</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #00b14f 0%, #009245 100%);
+    }
+    .glass {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-5xl grid lg:grid-cols-2 overflow-hidden rounded-[40px] shadow-2xl bg-white">
+    <!-- Left -->
+    <div class="hidden lg:flex relative bg-gradient-to-br from-green-500 to-green-700 text-white p-14 flex-col justify-between">
+      <div>
+        <div class="flex items-center gap-3 mb-10">
+          <div class="w-14 h-14 rounded-2xl bg-white text-green-600 flex items-center justify-center font-extrabold text-2xl">
+            T
+          </div>
+          <h1 class="text-3xl font-extrabold">
+            TopCV
+          </h1>
+   </div>
+        <h2 class="text-5xl font-extrabold leading-tight mb-6">
+          Chào mừng bạn mới
+        </h2>
+        <p class="text-green-100 text-lg leading-relaxed max-w-md">
+          Đăng kí để tiếp tục tìm kiếm công việc mơ ước và quản lý CV chuyên nghiệp của bạn.
+        </p>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300"
+            class="w-16 h-16 rounded-2xl object-cover"
+          />
+          <div>
+            <h3 class="font-bold text-xl">Nguyễn Văn A</h3>
+            <p class="text-green-100 text-sm">Frontend Developer</p>
+          </div>
+        </div>
+        <p class="text-sm text-green-50 leading-relaxed">
+          “Nhờ TopCV mà mình tìm được công việc chỉ sau 2 tuần ứng tuyển.”
+        </p>
+      </div>
+    </div>
+    <!-- Right -->
+    <div class="p-8 md:p-14 flex flex-col justify-center bg-white">
+      <div class="lg:hidden flex items-center justify-center gap-3 mb-10">
+        <div class="w-12 h-12 rounded-2xl bg-green-600 text-white flex items-center justify-center font-extrabold text-xl">
+          T
+        </div>
+        <h1 class="text-3xl font-extrabold text-green-600">
+          TopCV
+        </h1>
+      </div>
+      <div class="mb-10">
+        <h2 class="text-4xl font-extrabold text-gray-800 mb-3">
+          Đăng kí
+        </h2>
+        <p class="text-gray-500">
+          Nhập thông tin của bạn.
+        </p>
+        <div>
+            <form id="registerForm" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        họ và tên
+                    </label>
+                    <input
+                    id="fullname"
+                    required
+                    type=" text"
+                    placeholder="Nguyễn Văn A"
+                    class="w-full px-5 py-4 rounder 2x1 border border-gray-200 outline-none focus:border-green-500 focus: ring-4 focus:ring-green-100 transition"
+                    />
+                </div>
+        </div>
+      </div>
+      <form id="loginForm" class="space-y-6">
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">
+            Email
+          </label>
+          <input
+            id="email"
+            required
+            type="email"
+            placeholder="example@gmail.com"
+            class="w-full px-5 py-4 rounded-2xl border border-gray-200 outline-none focus:border-green-500 focus:ring-4 focus:ring-green-100 transition"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">
+            Mật khẩu
+          </label>
+          <input
+            id="password"
+            required
+            type="password"
+            placeholder="nhập mật khẩu"
+            class="w-full px-5 py-4 rounded-2xl border border-gray-200 outline-none focus:border-green-500 focus:ring-4 focus:ring-green-100 transition"
+          />
+        </div>
+        <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+            xác nhận mật khẩu
+            </label>
+            <input
+            id="confirmPassword"
+            required
+            type="password"
+            placeholder="nhập lại mật khẩu"
+            class="w-full px-5 py-4 rounded-2xl border border-gray-200 outline-none focus:border-green-500 focus:ring-4 focus:ring-green-100 transition"
+            />
+        </div>
+        <div class="flex items-center justify-between text-sm">
+         <label class="flex items-center gap-2 text-gray-600">
+    <input
+        id="agreeTerms"
+        type="checkbox"
+        class="accent-green-600"
+    >
+    Tôi đã đọc và đồng ý với Điều khoản dịch vụ và Chính sách bảo mật của TopCV
+</label>
+          </label>
+          
+        </div>
+        <button
+          type="submit"
+          class="w-full py-4 rounded-2xl bg-green-600 hover:bg-green-700 text-white font-bold text-lg transition duration-300 shadow-lg shadow-green-200"
+        >
+          đăng kí
+        </button>
+        <div id="message" class="text-center mt-4"></div>
+      </form>
+      <div class="relative my-8">
+        <div class="border-t border-gray-200"></div>
+        <span class="absolute left-1/2 -translate-x-1/2 -top-3 bg-white px-4 text-sm text-gray-400">
+          Hoặc
+        </span>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <button class="border border-gray-200 py-4 rounded-2xl font-semibold hover:bg-gray-50 transition">
+          Google
+        </button>
+        <button class="border border-gray-200 py-4 rounded-2xl font-semibold hover:bg-gray-50 transition">
+          Facebook
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+   document.getElementById("registerForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const fullname = document.getElementById("fullname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const agreeTerms = document.getElementById("agreeTerms").checked;
+    const message = document.getElementById("message");
+
+    message.innerHTML = "";
+
+    if (password !== confirmPassword) {
+        message.innerHTML =
+            "<p class='text-red-500 font-medium'>Mật khẩu xác nhận không khớp!</p>";
+        return;
+    }
+
+    if (password.length < 6) {
+        message.innerHTML =
+            "<p class='text-red-500 font-medium'>Mật khẩu phải có ít nhất 6 ký tự!</p>";
+        return;
+    }
+
+    if (!agreeTerms) {
+        message.innerHTML =
+            "<p class='text-red-500 font-medium'>Bạn phải đồng ý với Điều khoản dịch vụ trước khi đăng ký!</p>";
+        return;
+    }
+
+    message.innerHTML =
+        "<p class='text-green-600 font-medium'>Đăng ký thành công!</p>";
+
+    console.log({
+        fullname,
+        email,
+        password
+    });
+
+    document.getElementById("registerForm").reset();
+});
+  </script>
+</body>
+</html>

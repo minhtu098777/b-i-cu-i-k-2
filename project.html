@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TopCV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #00b14f 0%, #009245 100%);
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl">
+          T
+        </div>
+        <h1 class="text-2xl font-extrabold text-green-600">TopCV</h1>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="#" class="hover:text-green-600">Việc làm</a>
+        <a href="#" class="hover:text-green-600">CV</a>
+        <a href="#" class="hover:text-green-600">Công ty</a>
+        <a href="#" class="hover:text-green-600">Blog</a>
+      </nav>
+      <div class="flex gap-3">
+        <a href="login.html">
+        <button class="px-5 py-2 rounded-xl border border-green-600 text-green-600 font-semibold hover:bg-green-50">
+          Đăng nhập
+        </a>
+        </button>
+      <a href="register.html">
+        <button class="px-5 py-2 rounded-xl gradient-bg text-white font-semibold hover:opacity-90">
+          Đăng ký
+        </a>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Hero -->
+  <section class="gradient-bg text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-5xl font-extrabold leading-tight mb-6">
+          Tìm việc làm mơ ước của bạn
+        </h2>
+        <p class="text-lg text-green-100 mb-8 leading-relaxed">
+          Hàng nghìn công việc chất lượng cao đang chờ bạn. Tạo CV chuyên nghiệp và ứng tuyển chỉ với 1 click.
+        </p>
+        <div class="bg-white rounded-2xl p-4 flex flex-col md:flex-row gap-4 shadow-2xl">
+          <input
+            type="text"
+            placeholder="Vị trí công việc..."
+            class="flex-1 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Địa điểm..."
+            class="flex-1 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 outline-none"
+          />
+          <button class="px-6 py-3 rounded-xl gradient-bg text-white font-semibold whitespace-nowrap">
+            Tìm kiếm
+          </button>
+        </div>
+        <div class="flex gap-8 mt-10">
+          <div>
+            <h3 class="text-3xl font-bold">10K+</h3>
+            <p class="text-green-100">Việc làm</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold">5K+</h3>
+            <p class="text-green-100">Doanh nghiệp</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold">1M+</h3>
+            <p class="text-green-100">Ứng viên</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="bg-white rounded-3xl p-6 shadow-2xl text-gray-800">
+          <div class="flex items-center gap-4 mb-6">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300"
+              class="w-20 h-20 rounded-2xl object-cover"
+            />
+
+            <div>
+              <h3 class="text-2xl font-bold">Nguyễn Văn A</h3>
+              <p class="text-gray-500">Frontend Developer</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1 text-sm">
+                <span>HTML/CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="w-full h-3 bg-gray-100 rounded-full overflow-hidden">
+                <div class="h-full bg-green-500 w-[95%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1 text-sm">
+                <span>JavaScript</span>
+                <span>88%</span>
+              </div>
+              <div class="w-full h-3 bg-gray-100 rounded-full overflow-hidden">
+                <div class="h-full bg-green-500 w-[88%]"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1 text-sm">
+                <span>ReactJS</span>
+                <span>80%</span>
+              </div>
+              <div class="w-full h-3 bg-gray-100 rounded-full overflow-hidden">
+                <div class="h-full bg-green-500 w-[80%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Jobs -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="flex items-center justify-between mb-10">
+      <div>
+        <h2 class="text-4xl font-bold mb-2">Việc làm nổi bật</h2>
+        <p class="text-gray-500">Những cơ hội tốt nhất dành cho bạn</p>
+      </div>
+      <button class="px-5 py-3 rounded-xl border border-green-600 text-green-600 font-semibold hover:bg-green-50">
+        Xem tất cả
+      </button>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-3xl p-6 shadow-sm card-hover border border-gray-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl">
+            F
+          </div>
+          <div>
+            <h3 class="font-bold text-xl">Frontend Developer</h3>
+            <p class="text-gray-500">FPT Software</p>
+          </div>
+        </div>
+        <div class="space-y-3 text-sm text-gray-600 mb-6">
+          <p>💰 15 - 25 triệu</p>
+          <p>📍 Hà Nội</p>
+          <p>⏰ Fulltime</p>
+        </div>
+        <button class="w-full py-3 rounded-xl gradient-bg text-white font-semibold hover:opacity-90">
+          Ứng tuyển ngay
+        </button>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow-sm card-hover border border-gray-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">
+            B
+          </div>
+          <div>
+            <h3 class="font-bold text-xl">Backend Developer</h3>
+            <p class="text-gray-500">VNG Corporation</p>
+          </div>
+        </div>
+        <div class="space-y-3 text-sm text-gray-600 mb-6">
+          <p>💰 20 - 35 triệu</p>
+          <p>📍 TP.HCM</p>
+          <p>⏰ Hybrid</p>
+        </div>
+        <button class="w-full py-3 rounded-xl gradient-bg text-white font-semibold hover:opacity-90">
+          Ứng tuyển ngay
+        </button>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow-sm card-hover border border-gray-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-xl">
+            U
+          </div>
+          <div>
+            <h3 class="font-bold text-xl">UI/UX Designer</h3>
+            <p class="text-gray-500">Viettel Digital</p>
+          </div>
+        </div>
+        <div class="space-y-3 text-sm text-gray-600 mb-6">
+          <p>💰 18 - 30 triệu</p>
+          <p>📍 Đà Nẵng</p>
+          <p>⏰ Remote</p>
+        </div>
+        <button class="w-full py-3 rounded-xl gradient-bg text-white font-semibold hover:opacity-90">
+          Ứng tuyển ngay
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Features -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Tại sao chọn TopCV?</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto">
+          Nền tảng tuyển dụng hiện đại giúp kết nối ứng viên và doanh nghiệp nhanh chóng.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gray-50 rounded-3xl p-8 text-center card-hover">
+          <div class="w-16 h-16 rounded-2xl gradient-bg mx-auto mb-5 flex items-center justify-center text-white text-2xl">
+            ⚡
+          </div>
+          <h3 class="font-bold text-xl mb-3">Ứng tuyển nhanh</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Chỉ với 1 click để gửi CV đến hàng nghìn doanh nghiệp.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-3xl p-8 text-center card-hover">
+          <div class="w-16 h-16 rounded-2xl gradient-bg mx-auto mb-5 flex items-center justify-center text-white text-2xl">
+            📄
+          </div>
+          <h3 class="font-bold text-xl mb-3">CV chuyên nghiệp</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Hàng trăm mẫu CV hiện đại giúp bạn nổi bật.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-3xl p-8 text-center card-hover">
+          <div class="w-16 h-16 rounded-2xl gradient-bg mx-auto mb-5 flex items-center justify-center text-white text-2xl">
+            🔍
+          </div>
+          <h3 class="font-bold text-xl mb-3">Tìm kiếm thông minh</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Gợi ý công việc phù hợp theo kỹ năng của bạn.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-3xl p-8 text-center card-hover">
+          <div class="w-16 h-16 rounded-2xl gradient-bg mx-auto mb-5 flex items-center justify-center text-white text-2xl">
+            🏢
+          </div>
+          <h3 class="font-bold text-xl mb-3">Doanh nghiệp uy tín</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Kết nối với các công ty công nghệ hàng đầu Việt Nam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="py-20 px-6">
+    <div class="max-w-5xl mx-auto rounded-[40px] gradient-bg text-white p-12 text-center shadow-2xl">
+      <h2 class="text-5xl font-extrabold mb-6">
+        Sẵn sàng tìm công việc mới?
+      </h2>
+      <p class="text-green-100 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+        Tham gia cộng đồng hàng triệu ứng viên và doanh nghiệp trên nền tảng tuyển dụng hiện đại.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <button class="px-8 py-4 rounded-2xl bg-white text-green-600 font-bold text-lg hover:opacity-90">
+          Tạo CV miễn phí
+        </button>
+        <button class="px-8 py-4 rounded-2xl border border-white text-white font-bold text-lg hover:bg-white/10">
+          Khám phá việc làm
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl">
+            T
+          </div>
+          <h2 class="text-2xl font-bold text-white">TopCV</h2>
+        </div>
+        <p class="leading-relaxed text-sm">
+          Nền tảng tuyển dụng và tạo CV hàng đầu Việt Nam.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Về chúng tôi</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-white">Giới thiệu</a></li>
+          <li><a href="#" class="hover:text-white">Liên hệ</a></li>
+          <li><a href="#" class="hover:text-white">Điều khoản</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Ứng viên</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-white">Tìm việc</a></li>
+          <li><a href="#" class="hover:text-white">Mẫu CV</a></li>
+          <li><a href="#" class="hover:text-white">Blog nghề nghiệp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Doanh nghiệp</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-white">Đăng tuyển</a></li>
+          <li><a href="#" class="hover:text-white">Tìm ứng viên</a></li>
+          <li><a href="#" class="hover:text-white">Giải pháp HR</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm">
+       2026 TopCV Clone UI. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
