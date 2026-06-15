@@ -1,0 +1,458 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fa;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #00b14f;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu a {
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #00b14f;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn {
+  border: 1px solid #00b14f;
+  color: #00b14f;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #00b14f;
+  color: white;
+}
+
+.register-btn {
+  background: #00b14f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.register-btn:hover {
+  background: #009143;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #00b14f,
+    #008f44
+  );
+
+  color: white;
+  text-align: center;
+  padding: 100px 20px 120px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #ffe600;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-wrapper {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  width: 800px;
+  max-width: 95%;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+
+  display: flex;
+  gap: 10px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.search-box button {
+  background: #00b14f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #009143;
+}
+
+/* =========================
+   JOBS SECTION
+========================= */
+
+.jobs-section {
+  padding: 60px 0;
+}
+
+.jobs-section h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.jobs-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 20px;
+}
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+  color: #00b14f;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  margin-bottom: 10px;
+}
+
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.job-card button {
+  width: 100%;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #00b14f;
+  color: white;
+
+  cursor: pointer;
+}
+
+.job-card button:hover {
+  background: #009143;
+}
+
+/* =========================
+   JOB DETAIL
+========================= */
+
+.job-detail {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-detail h1 {
+  color: #00b14f;
+  margin-bottom: 20px;
+}
+
+.job-detail p {
+  margin-bottom: 15px;
+}
+
+.job-detail button {
+  background: #00b14f;
+  color: white;
+
+  border: none;
+  padding: 12px 25px;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+/* =========================
+   LOGIN / REGISTER
+========================= */
+
+.auth-container {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background: white;
+
+  width: 420px;
+  max-width: 95%;
+
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-box input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.auth-box button {
+  padding: 12px;
+  border: none;
+
+  background: #00b14f;
+  color: white;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: #009143;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-grid {
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: #00b14f;
+}
+
+/* =========================
+   ADMIN TABLE
+========================= */
+
+table {
+  width: 100%;
+  background: white;
+
+  border-collapse: collapse;
+
+  margin-top: 30px;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #00b14f;
+  color: white;
+}
+
+table button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+table button:first-child {
+  background: #3498db;
+  color: white;
+}
+
+table button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 60px;
+
+  background: white;
+  text-align: center;
+
+  padding: 20px;
+
+  box-shadow:
+    0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
